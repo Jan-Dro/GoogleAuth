@@ -134,7 +134,7 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('get_google_client_id/', views.get_google_client_id, name='get_google_client_id'),
+    path('get_google_client_id/', get_google_client_id, name='get_google_client_id'),
 ]
 ```
 
