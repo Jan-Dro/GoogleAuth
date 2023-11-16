@@ -18,7 +18,7 @@ Once the configuration is complete, take note of the client ID that was created.
 Add the following script tag to your `index.html` file to load the Google Platform Library:
 
 ```html
-<script src="<https://accounts.google.com/gsi/client>" async defer></script>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
 
 ```
 
@@ -64,7 +64,7 @@ function GoogleLogin() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('<http://127.0.0.1:8000/authentication/get_google_client_id/>', {
+      const response = await fetch('http://127.0.0.1:8000/authentication/get_google_client_id', {
         'Cross-Origin-Opener-Policy': 'unsafe-none',
         method: 'POST',
       });
