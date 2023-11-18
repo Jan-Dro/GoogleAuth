@@ -15,7 +15,11 @@ Once the configuration is complete, take note of the client ID that was created.
 
 ## Step 2: Load Google Platform Library
 
-Add the following script tag to your `index.html` file to load the Google Platform Library:
+Start by locating the index.html file in the root of your React project.
+
+Open the index.html file.
+
+To load the Google Platform Library, add the following script tag to your index.html file:
 
 ```html
 <script src="https://accounts.google.com/gsi/client" async defer></script>
