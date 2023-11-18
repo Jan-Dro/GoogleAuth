@@ -71,7 +71,7 @@ function GoogleLogin() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const response = await fetch('http://127.0.0.1:8000/authentication/get_google_client_id', {
+      const response = await fetch('http://127.0.0.1:8000/authentication/get_google_client_id/', {
         'Cross-Origin-Opener-Policy': 'unsafe-none',
         method: 'POST',
       });
@@ -99,7 +99,7 @@ function GoogleLogin() {
 
       {user && (
         <div>
-          <img src={user.picture} alt="User Profile" />
+          <img src={user.picture} alt="" />
           <h3>{user.name}</h3>
         </div>
       )}
