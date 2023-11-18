@@ -6,10 +6,13 @@ In this lesson, we will learn how to implement Google authentication in a web ap
 ## Step 1: Create Google API Credentials
 
 1. Go to the [Google API Console](https://console.cloud.google.com/).
-2. Navigate to the **Credentials** page.
-3. Click on **Create credentials > OAuth client ID**.
-4. Select the **Web application** application type.
-5. Name your OAuth 2.0 client and click **Create**.
+2. Create a project, select no organization. 
+3. Click on the hambuger menu, hover over **API & Services**. Then navigate to the **Oauth consent screen** page.
+4. User type will be **External**.
+5. Fill out basic info, click continue and then lets add the Scopes.
+6. Click on **Create credentials > OAuth client ID**.
+7. Select the **Web application** application type.
+8. Name your OAuth 2.0 client and click **Create**.
 
 Once the configuration is complete, take note of the client ID that was created. You will need the client ID for the next steps.
 
