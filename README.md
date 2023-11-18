@@ -113,6 +113,46 @@ export default GoogleLogin;
 
 ## Step 5: Backend Setup
 
+### Install `django-cors-headers`:
+
+```bash
+pip install django-cors-headers
+```
+
+In your Django project's settings.py, add 'corsheaders' to your INSTALLED_APPS and MIDDLEWARE
+``` python
+
+INSTALLED_APPS = [
+    # ...
+    'corsheaders',
+    # ...
+]
+
+MIDDLEWARE = [
+    # ...
+    'corsheaders.middleware.CorsMiddleware',
+    # ...
+]
+```
+Configure cors settings 
+
+```python
+
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:5173',
+    'http://localhost:8000',
+]
+
+CORS_ALLOW_METHODS = [
+    "GET",
+    "POST",
+    "PUT",
+    "PATCH",
+    "DELETE",
+    "OPTIONS",
+]
+```
+
 In your backend, create a view and a URL to get the Google client ID. The client ID should be stored in your environment variables.
 
 Here is an example view:
